@@ -4,12 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/challenges/challenge-01/app/css/style.css">
-    <title>Challenge-01 Encriptador de texto</title>
+    <link rel="stylesheet" href="/app/css/reset.css">
+    <link rel="stylesheet" href="/app/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+<title>Challenge-01 Encriptador de texto</title>
 </head>
-<body>
-    
 
-    <script src="/challenges/challenge-01/app/js/app.js"></script>
+<body>
+
+    <header>
+        <img src="/app/images/Logo.png" alt="" srcset="" class="logo-img">
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="seccion-input">
+                    <section >
+                        <textarea name="input-text" id="input-text" cols="30" rows="10" class="input-text transparent-bg darkblue-300 no-border" placeholder="Introduce el texto aquí"></textarea>
+                        <div class="advertencia-text"><img src="/app/images/Group.png" alt="" class="adv-icon"><p class="gray-400">Solo letras minúsculas y sin acentos</p></div>
+                    </section>
+                    <section class="seccion-botones">
+                        <div>
+                            <button class="button-convertir darkblue-bg-300 round-border20 lightblue-100 no-border" id="boton-encrypta">
+                                Encriptar
+                            </button>
+                            <button class="button-des lightblue-bg-100 round-border20 border-color-darkblue darkblue-300 border-solid" id="boton-des">
+                                Desencriptar
+                            </button>
+                        </div>
+                    </section>
+            </div>
+            <section class="seccion-result">
+                <div class="munecotexto" id="munecotexto">
+                    <img src="/app/images/Muñeco.png" alt="" srcset="">
+                    <img src="/app/images/Frame 5.png" alt="" srcset="">
+                </div>
+                <textarea name="result-text" readonly id="result-text" cols="30" rows="10" class="result-text no-border round-border10 darkblue-300" ></textarea>
+                <button id="btn-copiar" class="btn-copiar darkblue-bg-300 round-border20 lightblue-100 no-border" >Copiar</button>
+
+            </section>
+        </div>
+     </main>
+    
+    <footer>
+        <p class="credito">Realizado por Raymundo Morales</p>
+    </footer>
+
+
+
+
+
+        <script src="/app/js/app.js"></script>
+
+
 </body>
 </html>
