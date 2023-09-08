@@ -1,0 +1,281 @@
+
+
+/*
+
+Estilos generales
+
+*/
+*{
+    
+    /* background: rgba(200, 50, 18, 0.25); */
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color: #ebeef7;
+    padding: 50px 100px;
+    width: 100%;
+    height: 100vh;
+    
+    
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #0A3871;
+    opacity: 1; /* Firefox */
+}
+/*
+
+Estilos persistentes
+
+*/
+
+
+/*
+COLORES
+*/
+.lightblue-100{
+    color: #F3F5FC;
+}
+
+.darkblue-300{
+    color: #0A3871;
+}
+
+.gray-400{
+    color: #495057;
+}
+
+.gray-500{
+    color:#343A40;
+}
+/*
+FONDOS
+*/
+.transparent-bg{
+    background-color: transparent;
+}
+
+.white-bg{
+    background-color: white;
+}
+
+.lightblue-bg-100{
+    background-color: #F3F5FC;
+}
+
+
+.darkblue-bg-300{
+    background-color: #0A3871;
+}
+/*
+BORDES
+*/
+.no-border{
+    border: none;
+}
+
+.round-border5{
+    border-radius: 5px;
+}
+
+.round-border10{
+    border-radius: 10px;
+}
+
+.round-border20{
+    border-radius: 20px;
+}
+
+.border-color-darkblue{
+    border-color: #0A3871;
+}
+
+.border-solid{
+    border-style: solid;
+}
+
+/*
+
+Estilos especificos
+
+*/
+
+
+header{
+ margin-bottom: 20px;   
+}
+
+main{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.container{
+    display: flex;
+    gap: 50px;
+   height:80%;
+}
+
+
+.seccion-botones{
+    vertical-align: bottom;
+}
+.input-text{
+    width: 100%;
+    height: 500px;
+    font-size: 20pt;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.advertencia-text{
+    display: flex;
+    gap: 5px;
+    margin-bottom: 20px;
+    width: 90%;
+
+}
+
+.adv-icon{
+    width: 15px;
+    height: 15px;
+}
+
+.button-convertir{
+    width: 300px;
+    height: 67px;
+    font-size: 12pt;
+    margin-bottom: 20px;   
+}
+
+.button-convertir:hover{
+    opacity: 90%;
+}
+
+.button-convertir:active{
+    opacity: 80%;
+}
+
+.button-des{
+    width: 300px;
+    height: 67px;
+    font-size: 12pt;
+    margin-bottom: 20px;
+    border-width: 1px;
+    
+}
+
+.button-des:hover{
+    background-color: #e2e5ee;
+    border-color: #10498f;
+}
+
+.button-des:active{
+    background-color:#d4d8e7;
+    border-color: #1d5ead;
+}
+
+.munecotexto{
+    position: absolute;
+    display: grid;
+    width: 300px;
+    height: 400px;
+    justify-content: center;
+    align-content: space-evenly;
+}
+
+.munecotexto img{
+    
+    width: 300px;
+}
+
+.result-text{
+    margin-bottom: 20px;
+    width: 100%;
+    height: 500px;
+    padding: 5px;
+    display: block;
+    margin-bottom: 50px;
+}
+
+.btn-copiar{
+    width: 300px;
+    height: 67px;
+    font-size: 12pt;
+    margin-bottom: 20px; 
+}
+
+.btn-copiar:hover{
+    opacity: 90%;
+}
+
+.btn-copiar:active{
+    opacity: 80%;
+}
+
+.copiado.button-convertir:active{
+    display: block;
+    transition: 1s;
+}
+
+.credito{
+    font-size: 8pt;
+    color: gray;
+}
+
+
+
+
+@media(max-width:650px) { 
+    body{
+        background-color: #ebeef7;
+        padding: 10px;
+        width: 100%;
+        
+        
+    }
+
+  
+
+    .seccion-input{
+        width: 100%;
+    }
+
+
+    .input-text{
+        display: flex;
+        border-radius: 5px;
+        width: 100%;
+        height: 300px;
+    
+    }  
+
+    .container{
+        display: grid;
+        width: 100%;
+        gap: 10px;
+    }
+    .button-des{
+        
+        margin-bottom: 5px;
+        
+    }
+   
+
+    .result-text{
+        width: 100%;
+    }
+
+    
+}
+
+footer{
+ position:fixed;
+ bottom: 0;
+ left: 10;
+}
