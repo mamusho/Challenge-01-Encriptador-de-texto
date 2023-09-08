@@ -37,6 +37,7 @@ function desconvertir(){
         
         resultText.value = texto;
         inputText.value = "";
+        muneco.style.display="none"
 }
 
 function copiar(){
@@ -44,7 +45,7 @@ function copiar(){
         navigator.clipboard.writeText(resultText.value);
         alert("Copiado!")
         resultText.value=""
-        muneco.style.display="none"
+        muneco.style.display="block"
     } else{
       alert("No hay texto para copiar")
     }
