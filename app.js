@@ -44,6 +44,7 @@ function copiar(){
         navigator.clipboard.writeText(resultText.value);
         alert("Copiado!")
         resultText.value=""
+        muneco.style.display="none"
     } else{
       alert("No hay texto para copiar")
     }
